@@ -1,0 +1,155 @@
+body{
+    background:#FFE4C0 url(../images/bg.png) no-repeat left top;
+    background-size: contain;
+    height: 100vh;
+}
+
+.to-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffff;
+    opacity: 95%;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 4px #FFCC80;
+    font-weight: 600;
+    max-height: 70%;
+    max-width: 350px;
+    margin: 86px auto;
+    position: relative;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #BF360C;
+}
+
+.title, .type{
+    margin: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.type-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0 25px;
+    font-size: 12px;
+}
+
+.type{
+    padding: 10px;
+    color: #b896a7;
+    border-left: 3px solid #ee6002;
+}
+
+.to-do .items{
+    max-width: 450px;
+}
+
+.to-do .items .tasks{
+    max-height: 550px;
+    max-width: 300px;
+    overflow: auto;
+    padding: 5px;
+    line-height: 35px;
+}
+
+li{
+    list-style: square inside;
+    color:#880E4F;
+    cursor: pointer;    
+}
+
+.to-do .items .add-task{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.add-task #input{
+    width: 280px;
+    margin-top: 5px;
+}
+
+#input, .btn{
+    padding: 15px;
+	border-radius: 50px;
+}
+
+.btn{
+    width: 180px;
+	margin: 0 auto 15px;
+    border: none;
+	background: linear-gradient(to right, #D81B60, #FF8A80);
+	cursor: pointer;
+    opacity: 0.6;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn:hover{
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+
+.tasks, #input, .btn, #input-list{
+    font-size: 15px;
+    color: #880E4F;
+}
+
+span{
+    color: #ee6002;
+    font-size: 13px;
+    display: none;
+}
+
+span.note{
+    display: block;
+}
+
+@keyframes fall-leaf {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(1200px);
+    }
+}
+
+#small-leaf{
+    animation: fall-leaf 6s forwards infinite;
+    position: absolute;
+    left: 15%;
+}
+
+#orange-leaf{
+    animation: fall-leaf 7s forwards infinite;
+    position: absolute;
+    left: 20%;
+}
+
+#maple-leaf{
+    animation: fall-leaf 8s forwards infinite;
+    position: absolute;
+    left: 30%;
+}
+
+#fallen-leaf{
+    animation: fall-leaf 9s forwards infinite;
+    position: absolute;
+    left: 50%;
+}
+
+#red-leaf{
+    animation: fall-leaf 6s forwards infinite;
+    position: absolute;
+    left: 75%;
+}

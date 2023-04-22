@@ -1,0 +1,17 @@
+@media (max-width: 768px){
+    .items .add-task{
+        max-width: 300px;
+    }
+
+    .items .add-task #input{
+        max-width: 220px;
+    }
+
+    .btn{
+        max-width: 200px;
+    }
+
+    span{
+        text-align: center;
+    }
+}
