@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <div class="container">
+
+        <img src="./src/images/small-fallen-leaf.png" alt="Small fallen leaf" id="small-leaf">
+        <img src="./src/images/orange-leaf.png" alt="Orange leaf" id="orange-leaf">
+        <img src="./src/images/maple-leaf.png" alt="Maple leaf" id="maple-leaf">
+        <img src="./src/images/fallen-leaf.png" alt="Fallen leaf" id="fallen-leaf">
+
+        <main class="to-do">
+            <header class="header">
+            <p class="title">My daily reminder</p>
+                <div class="type-list">
+                    <a href="#" class="type">Task list</a>
+                    <a href="#" class="type">Shopping list</a>
+                    <a href="#" class="type">Work stuff</a>
+                    <a href="#" class="type">Study planner</a>
+               </div>
+            </header>
+            <div class="items">
+                <ul class="tasks"></ul>
+
+                <div class="add-task">
+                    <input type="text" name="input-task" placeholder="Write a task" id="input">
+                    <span >Please, write your task above.</span>
+                    <button class="btn">Add task</button>
+                </div>
+            </div>
+
+        <img src="./src/images/red-leaf.png" alt="Red leaf" id="red-leaf">
+        </main>
+
+    </div>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
